@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour{
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         anim.SetBool("IsJump", true); // Ativa a animação de pulo
     }
-
+    
     void Attack(){ // Função de ataque do Player
        if(Input.GetButtonDown("Fire1")){ // Verifica se o player apertou o botão de ataque
             anim.Play("Animation - Attack", -1); // Ativa a animação de ataque
